@@ -1,0 +1,16 @@
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Folder config file
+.directory
+
+# Recycle Bin used on file shares
+.Trash-*
+
+# System file
+System Volume Information/
+# Environment variables file
+.env
