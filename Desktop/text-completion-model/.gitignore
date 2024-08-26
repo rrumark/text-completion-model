@@ -1,10 +1,13 @@
+# Sanal ortam klasörü
+env/
+
+# Gizli sistem dosyaları ve klasörleri
 .aws/
 .cache/
 .cortex-debug/
 .docker/
 .dotnet/
 .edevletconf/
-.gitconfig
 .ipython/
 .keras/
 .matplotlib/
@@ -12,4 +15,16 @@
 .templateengine/
 .vscode/
 .wdm/
-env/
+NTUSER.DAT
+NTUSER.DAT*
+AppData/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+OneDrive/
+anaconda/
+projects/
+source/
+Real-Time-Object-Detection/
