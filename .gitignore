@@ -13,4 +13,4 @@ $RECYCLE.BIN/
 # System file
 System Volume Information/
 # Environment variables file
-.env
+env/
