@@ -1,0 +1,15 @@
+.aws/
+.cache/
+.cortex-debug/
+.docker/
+.dotnet/
+.edevletconf/
+.gitconfig
+.ipython/
+.keras/
+.matplotlib/
+.node_repl_history/
+.templateengine/
+.vscode/
+.wdm/
+env/
