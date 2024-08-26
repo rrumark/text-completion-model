@@ -1,6 +1,3 @@
-# Sanal ortam klasörü
-env/
-
 # Gizli sistem dosyaları ve klasörleri
 .aws/
 .cache/
@@ -15,16 +12,26 @@ env/
 .templateengine/
 .vscode/
 .wdm/
-NTUSER.DAT
-NTUSER.DAT*
+AMDRM_Install.log
 AppData/
+Contacts/
+desktop.ini
+env/
+githubprojects/
 Documents/
 Downloads/
+Favorites/
+Links/
 Music/
-Pictures/
-Videos/
+NTUSER.DAT*
 OneDrive/
+Pictures/
+Real-Time-Object-Detection/
+Saved Games/
+Searches/
+Videos/
 anaconda/
+e_devlet_eimza.log
+ekimlik.lan
 projects/
 source/
-Real-Time-Object-Detection/
