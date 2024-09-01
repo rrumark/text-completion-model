@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import simpledialog, scrolledtext
 
 # OpenAI API anahtarını ayarla
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def generate_conversation(prompt):
     response = client.chat.completions.create(
