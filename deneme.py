@@ -2,7 +2,7 @@ from openai import OpenAI
 import tkinter as tk
 from tkinter import simpledialog, scrolledtext
 
-# OpenAI API anahtarını ayarla
+
 client = OpenAI(api_key="")
 
 def generate_conversation(prompt):
@@ -29,7 +29,7 @@ def start_conversation(event=None):
     conversation = generate_conversation(user_input)
     chat_history.insert(tk.END, f"Assistant: {conversation}\n")
     
-    # Girdiyi temizle
+    
     entry.delete(0, tk.END)
 
 def get_movie_recommendation(event=None):
@@ -39,27 +39,23 @@ def get_movie_recommendation(event=None):
     recommendation = generate_conversation(f"I'm looking for movies similar to {user_input}.")
     chat_history.insert(tk.END, f"Assistant: {recommendation}\n")
     
-    # Girdiyi temizle
+    
     entry.delete(0, tk.END)
 
-# Tkinter arayüzü
 root = tk.Tk()
 root.title("Chatbot")
 
-# Konuşma geçmişini göstermek için kaydırılabilir bir metin kutusu
+
 chat_history = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=50, height=15)
 chat_history.pack(padx=10, pady=10)
 
-# Giriş alanı (Entry widget)
 entry = tk.Entry(root, width=50)
 entry.pack(padx=10, pady=10)
-entry.bind("<Return>", start_conversation)  # Enter tuşuna basıldığında start_conversation fonksiyonunu çağırır
+entry.bind("<Return>", start_conversation)  
 
-# Konuşma başlatma butonu
 start_button = tk.Button(root, text="Start Conversation", command=start_conversation)
 start_button.pack(pady=5)
 
-# Film önerisi alma butonu
 recommend_button = tk.Button(root, text="Get Movie Recommendation", command=get_movie_recommendation)
 recommend_button.pack(pady=5)
 
